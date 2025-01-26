@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+    /* Background with smooth gradient and multiple color stops */
+    background: radial-gradient(circle, #5decde 30%, #ae1c7e 70%, #000000);
+    
+    /* Modern typography */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    
+    /* Flexbox centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    /* Full page height and smooth scrolling */
+    margin: 0;
+    overflow: hidden;
+    
+    /* Text styling */
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    
+    /* Apply a slight shadow for better readability */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.4);
+    
+    /* Animation for a subtle background shift */
+    animation: backgroundShift 15s ease infinite;
+  }
+  
+  /* Gradient shift animation */
+  @keyframes backgroundShift {
+    0% {
+      background: radial-gradient(circle, #ec945d 30%, #ae1c7e 70%, #000000);
+    }
+    50% {
+      background: radial-gradient(circle, #1caeab 30%, #5decbf 70%, #000000);
+    }
+    100% {
+      background: radial-gradient(circle, #e75dec 30%, #ae211c 70%, #000000);
+    }
+  }
+  
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  border: 2px solid white;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.247);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(24, 188, 144, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  border: 1px solid rgba(255, 255, 255, 0.674);
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+select {
+  color: #000;
+}
+
+button {
+  background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.777);
+}
+
+#qrCode {
+  margin-top: 20px;
+}
+
+#downloadBtn {
+  display: none;
+  margin-top: 15px;
+}
